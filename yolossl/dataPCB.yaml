@@ -1,0 +1,5 @@
+train: VISO/train/images
+val: VISO/valid/images
+
+nc: 2
+names: ['-', 'missing hole']

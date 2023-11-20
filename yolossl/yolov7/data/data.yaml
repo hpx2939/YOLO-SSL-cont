@@ -1,0 +1,5 @@
+train: ../train/images
+val: ../valid/images
+
+nc: 7
+names: ['Aircraft Carrier', 'Bulk Carrier', 'Cargo Ship', 'Container Ship', 'STS', 'Ship', 'Tanker']

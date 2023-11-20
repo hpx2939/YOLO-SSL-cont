@@ -1,0 +1,49 @@
+######################################
+# Set variables
+######################################
+#python test.py ../configs/testship.yaml
+###################
+# yoltv5 input file variables
+yolosl_path: ./
+# object name variables (object names should be in order)
+name_file_name: 'dataship.yaml'
+sealand: True
+object_names:
+- '-'
+- 'Ship'
+###################
+# image slicing variables
+data_root: ./
+test_im_dir: rawdata/
+sliceHeight: 640
+sliceWidth: 640
+slice_overlap: 0.25
+im_ext: '.tif'
+#out_ext: '.jpg'
+# shouldn't need changed below here
+skip_highly_overlapped_tiles: False
+slice_verbose: False
+n_threads_slice: 8
+slice_sep: '__'
+slice_overwrite: False
+outdir_slice_root: ./data/test_imagery/yoltv5
+outdir_slice_ims: ./data/test_imagery/images_slice
+outdir_slice_txt: ./data/test_imagery/txt
+outpath_test_txt: ./data/test_imagery/test.txt
+
+###################
+# inference variables
+outname_infer: 'test'
+weights_file: weights/yolospd.pt
+
+###################
+# post-process variables
+detection_threshes:
+- 0.2
+n_plots: 204
+allow_nested_detections: True
+# seldom changed below here
+extract_chips: False
+chip_rescale_frac: 1.1
+edge_buffer_test: 1
+max_bbox_size: 100
