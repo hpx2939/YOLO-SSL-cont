@@ -35,7 +35,7 @@ rawdata/
 results/test
 ```
 
-## How to run code(Mode2 YOLO-SLL單次執行)
+## How to run code(Mode2 YOLO-SSLL單次執行)
 ### 偵測以及前後處理執行指令
 ```
 python test.py ../configs/testPCBsl.yaml
