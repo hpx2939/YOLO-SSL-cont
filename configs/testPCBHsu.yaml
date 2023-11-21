@@ -32,7 +32,7 @@ outpath_test_txt: ./data/test_imagery/test.txt
 ###################
 # inference variables
 outname_infer: 'test'
-weights_file: weights/YOLOSSL.pt
+weights_file: weights/PCBHsu.pt
 
 ###################
 # post-process variables
