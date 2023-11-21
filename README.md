@@ -54,3 +54,31 @@ rawdata/
 ```
 results/test
 ```
+
+## config中的yaml file參數設定
+### name_file_name
+檔案需要放在yolosl資料夾內，檔名為 xxx.yaml，以下為yaml file範例
+```
+train: ship/train/images
+val: ship/valid/images
+nc: 2
+names: ['-', 'Ship']
+```
+
+### object_names: 
+對應上面names的分類
+```
+- '-'
+- 'Ship'
+```
+
+### sealand
+如果為 True 則會對切割後的圖片進行海陸分離
+
+### test_im_dir
+要偵測的圖片資料夾位置
+
+### sliceHeight and Width
+切割後的圖片大小
+### slice_overlap
+每一個切割相鄰圖片的重疊比例
