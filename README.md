@@ -1,6 +1,6 @@
 # YOLO-SSL-cont
 
-## How to run code(Mode1 YOLO背景執行)
+## How to run code
 終端機路徑執行路徑
 ```
 ./yolossl
@@ -16,6 +16,7 @@
 ```
 YOLOSSL.pt
 ```
+## (Mode1 YOLO背景執行)
 ### 首先載入偵測模型(不中斷執行) 
 需要打開第一個終端機後執行指令
 ```
@@ -39,7 +40,7 @@ rawdata/
 results/test
 ```
 
-## How to run code(Mode2 YOLO-SSL單次執行)
+## (Mode2 YOLO-SSL單次執行)
 ### 偵測以及前後處理執行指令
 ```
 python test.py ../configs/testPCBsl.yaml
